@@ -76,7 +76,7 @@ int main() {
 		Daysy2 = d2;
 	}
 	else if (m2 == 2) {
-		Daysy2 = (Jan - d2);
+		Daysy2 = (Jan + d2);
 	}
 	else if (m2 == 3) {
 		Daysy2 = (Jan + Feby2 + d2);
