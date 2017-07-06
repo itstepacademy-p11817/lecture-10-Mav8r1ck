@@ -4,8 +4,8 @@ int main() {
 
 	long double M1, M2, M3; //uroven' prodaj
 	int W = 200; //zarplata
-	int Bb = 200;//premiya dlya luchshego
 	long double B1, B2, B3;
+	long double Bb;
 	printf("Enter sales for Manager 1:\n");
 	scanf_s("%LF", &M1);
 	printf("Enter sales for Manager 2:\n");
@@ -41,22 +41,22 @@ int main() {
 		B3 = W + (M3*0.08);
 	}
 	if (B1 > B2&&B1 > B3) {
-		B1 = B1 + Bb;
-		printf("The manager1 is the best: %LF $\n", B1);
+		Bb = B1 + 200.00;
+		printf("The manager1 is the best: %LF $\n", Bb);
 	}
 	else {
 		printf("The income of the manager1: %LF $\n", B1);
 	}
 	if (B2 > B1&&B2 > B3) {
-		B2 = B2 + Bb;
-		printf("The manager2 is the best: %LF $\n", B2);
+		Bb = B2 +200.00;
+		printf("The manager2 is the best: %LF $\n", Bb);
 	}
 	else {
 		printf("The income of the manager2: %LF $\n", B2);
 	}
 	if (B3 > B1&&B3 > B2) {
-		B1 = B1 + Bb;
-		printf("The manager3 is the best: %LF $\n", B3);
+		Bb = B3 +200.00;
+		printf("The manager3 is the best: %LF $\n", Bb);
 	}
 	else {
 		printf("The income of the manager3: %LF $\n", B3);
